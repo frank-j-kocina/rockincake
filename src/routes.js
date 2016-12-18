@@ -7,12 +7,16 @@ import {MainComponent} from './app/main';
   template: '<router-outlet></router-outlet>',
   directives: [ROUTER_DIRECTIVES]
 })
-export class RootComponent {
-}
+export class RootComponent {}
 
 export const routes = [
   {
     path: '',
     component: MainComponent
+  },
+  {
+    path: '**',
+    redirectTo: '',
+    pathMatch: 'full'
   }
 ];
