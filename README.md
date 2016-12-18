@@ -6,9 +6,12 @@ Static Angular 2 Website for Rockin’ Cakes
 * `npm install`
 
 ## Serve Locally
-* `node ./node_modules/gulp/bin/gulp.js serve`
+* `bin/run.sh`
 * Browse `http://localhost:3000`
 
+## Test Locally
+* `bin/test.sh`
+
 ## Build and Release
-* `node ./node_modules/gulp/bin/gulp.js`
+* `bin/dist.sh`
 * Upload `dist` folder to S3
