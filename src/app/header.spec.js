@@ -4,12 +4,12 @@ import {HeaderComponent} from './header';
 import {async, inject, TestComponentBuilder} from '@angular/core/testing';
 
 describe('header component', () => {
-  it('should render \'Fountain Generator\'', async(inject([TestComponentBuilder], tcb => {
+  it('should render Rockin’ Cakes', async(inject([TestComponentBuilder], tcb => {
     tcb.createAsync(HeaderComponent)
       .then(fixture => {
         fixture.detectChanges();
         const header = fixture.nativeElement;
-        expect(header.querySelector('a').textContent.trim()).toBe('Fountain Generator');
+        expect(header.querySelector('a').textContent.trim()).toBe('Rockin’ Cakes');
       });
   })));
 });
