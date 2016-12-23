@@ -40,6 +40,7 @@ a:hover {
   flex: 1;
   font-size: 1.5rem;
   margin: 1rem;
+  font-weight: 700;
 }
 
 .title {
@@ -48,11 +49,15 @@ a:hover {
   align-items: center;
   padding: 1rem;
   background-color: #cc99ff;
+  background: -webkit-linear-gradient(#cc99ff, #ffffff);
+  background: -o-linear-gradient(#cc99ff, #ffffff);
+  background: -moz-linear-gradient(#cc99ff, #ffffff);
+  background: linear-gradient(#cc99ff, #ffffff);
   color: white;
 }
 
 .title-h1 {
-  font-weight: 300;
+  font-weight: 700;
   font-size: 4rem;
   margin: 1rem;
 }
@@ -65,7 +70,7 @@ a:hover {
 }
 
 .title-h2 {
-  font-weight: 300;
+  font-weight: 500;
   font-size: 2rem;
   margin: .5rem;
 }
@@ -79,6 +84,10 @@ a:hover {
 .social-icon {
   height: 30px;
   margin-right: 15px;
+}
+
+.pic-container {
+  text-align: center;
 }
 
 .favicon-purple {

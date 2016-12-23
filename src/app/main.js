@@ -8,4 +8,6 @@ import {FooterComponent} from './footer';
   template: require('./main.html'),
   directives: [HeaderComponent, TitleComponent, FooterComponent]
 })
-export class MainComponent {}
+export class MainComponent {
+  secret = '';
+}

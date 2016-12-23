@@ -1,7 +1,15 @@
 <div class="main-container">
-  <fountain-header></fountain-header>
-  <main class="main">
-    <fountain-title></fountain-title>
-  </main>
-  <fountain-footer></fountain-footer>
+  <div style="text-align: center; margin-top: 50px;"
+       [hidden]="secret === 'open sesame'">
+    <label for="password">Password: </label>
+    <input id="password" name="password"
+           type="text" [(ngModel)]="secret"/>
+  </div>
+  <div [hidden]="secret !== 'open sesame'">
+    <fountain-header></fountain-header>
+    <main class="main">
+      <fountain-title></fountain-title>
+    </main>
+    <fountain-footer></fountain-footer>
+  </div>
 </div>
